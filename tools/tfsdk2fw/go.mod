@@ -20,14 +20,14 @@ require (
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/aws/aws-sdk-go v1.55.5 // indirect
-	github.com/aws/aws-sdk-go-v2 v1.32.4 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.32.5 // indirect
 	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.6.6 // indirect
 	github.com/aws/aws-sdk-go-v2/config v1.28.4 // indirect
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.45 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.19 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/s3/manager v1.17.38 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.23 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.23 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.24 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.24 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.1 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/v4a v1.3.23 // indirect
 	github.com/aws/aws-sdk-go-v2/service/accessanalyzer v1.36.0 // indirect
@@ -117,7 +117,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.189.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ecr v1.36.5 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ecrpublic v1.27.5 // indirect
-	github.com/aws/aws-sdk-go-v2/service/ecs v1.49.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ecs v1.50.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/efs v1.33.5 // indirect
 	github.com/aws/aws-sdk-go-v2/service/eks v1.52.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/elasticache v1.43.2 // indirect
