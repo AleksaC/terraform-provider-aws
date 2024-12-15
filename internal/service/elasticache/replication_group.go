@@ -719,14 +719,16 @@ func resourceReplicationGroupRead(ctx context.Context, d *schema.ResourceData, m
 	} else {
 		log.Printf("[DEBUG] ElastiCache Replication Group (%s) Configuration Endpoint is nil", d.Id())
 
-		if rgp.NodeGroups[0].PrimaryEndpoint != nil {
-			log.Printf("[DEBUG] ElastiCache Replication Group (%s) Primary Endpoint is not nil", d.Id())
-			d.Set(names.AttrPort, rgp.NodeGroups[0].PrimaryEndpoint.Port)
-			d.Set("primary_endpoint_address", rgp.NodeGroups[0].PrimaryEndpoint.Address)
-		}
+		if len(rgp.NodeGroups) > 0 {
+			if rgp.NodeGroups[0].PrimaryEndpoint != nil {
+				log.Printf("[DEBUG] ElastiCache Replication Group (%s) Primary Endpoint is not nil", d.Id())
+				d.Set(names.AttrPort, rgp.NodeGroups[0].PrimaryEndpoint.Port)
+				d.Set("primary_endpoint_address", rgp.NodeGroups[0].PrimaryEndpoint.Address)
+			}
 
-		if rgp.NodeGroups[0].ReaderEndpoint != nil {
-			d.Set("reader_endpoint_address", rgp.NodeGroups[0].ReaderEndpoint.Address)
+			if rgp.NodeGroups[0].ReaderEndpoint != nil {
+				d.Set("reader_endpoint_address", rgp.NodeGroups[0].ReaderEndpoint.Address)
+			}
 		}
 	}
 
